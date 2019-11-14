@@ -42,7 +42,7 @@
         "--noreload",
         "--nothreading"
       ],
-      "django": true
+      "django": true,
     },
     {
       "name": "Python: Flask",
