@@ -51,17 +51,19 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'photos.urls'
 
+cur_dir = os.path.split(os.path.abspath(__file__))[0]
+
 TEMPLATES = [
   {
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [],
+    'DIRS': [cur_dir + '/views/templates'],
     'APP_DIRS': True,
     'OPTIONS': {
       'context_processors': [
         'django.template.context_processors.debug',
         'django.template.context_processors.request',
         'django.contrib.auth.context_processors.auth',
-        'django.contrib.messages.context_processors.messages',
+        'django.contrib.messages.context_processors.messages'
       ],
     },
   },

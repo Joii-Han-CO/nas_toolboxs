@@ -16,9 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from . import views
+import os
+import sys
+cur_dir = os.path.split(os.path.abspath(__file__))[0]
+sys.path.append(cur_dir)
+from views import base, login
 
 urlpatterns = [
-  path('', views.index),
-  path('admin/', admin.site.urls),
+  path('', base.index),
+  path('login/', login.index),
 ]
