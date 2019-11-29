@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<header>
+  <title>Login</title>
+  <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</header>
+<body>
+  <div class="login-panel">
+    <h1>Login</h1>
+    <form method="post" id="login-form">
+      <input type="hidden" name="csrfmiddlewaretoken" value="{{ csrf_token }}" />
+      <input type="text" name="login" placeholder="user name" aria-label="user name" title="User name" class="input_user_name" />
+      <input type="password" name="password" placeholder="password" aria-label="password" title="Password" class="input_password" />
+      <button type="submit" class="login_btn">Login</button>
+    </form>
+  </div>
+</body>
+</body>
+</html>

@@ -20,9 +20,10 @@ import os
 import sys
 cur_dir = os.path.split(os.path.abspath(__file__))[0]
 sys.path.append(cur_dir)
-from views import base, login
+from views import base, login, admin
 
 urlpatterns = [
   path('', base.index),
+  path('admin', admin.index),
   path('login/', login.index),
 ]
