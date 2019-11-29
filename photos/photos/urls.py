@@ -19,11 +19,11 @@ from django.urls import path
 import os
 import sys
 cur_dir = os.path.split(os.path.abspath(__file__))[0]
-sys.path.append(cur_dir)
-from views import base, login, admin
+sys.path.append(cur_dir + '/../')
+import login.views, admin.views
 
 urlpatterns = [
-  path('', base.index),
-  path('admin', admin.index),
-  path('login/', login.index),
+  #path('', base.index),
+  path('admin', admin.views.index),
+  path('login/', login.views.index),
 ]

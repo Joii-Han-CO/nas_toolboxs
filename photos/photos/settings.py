@@ -56,7 +56,7 @@ cur_dir = os.path.split(os.path.abspath(__file__))[0]
 TEMPLATES = [
   {
     'BACKEND': 'django.template.backends.django.DjangoTemplates',
-    'DIRS': [cur_dir + '/views/templates'],
+    'DIRS': [cur_dir + '../templates'],
     'APP_DIRS': True,
     'OPTIONS': {
       'context_processors': [
