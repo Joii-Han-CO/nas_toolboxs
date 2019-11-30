@@ -24,6 +24,6 @@ import login.views, admin.views
 
 urlpatterns = [
   #path('', base.index),
-  path('admin', admin.views.index),
+  path('admin/', admin.views.index),
   path('login/', login.views.index),
 ]
